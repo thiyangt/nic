@@ -8,7 +8,7 @@
 #' @export
 nic_palettes <- list(
   applecroton = rbind(c('#00441b', '#FFFF00'),c(1, 2)),
-  colleasa = rbind(c('#5B9E48', '#67001f'),c(1, 2)),
+  colleasa = rbind(c('#78c679', '#67001f'),c(1, 2)),
   colleasb = rbind(c('#238b45', '#67001f', '#e7298a'),c(1, 2, 3))
 )
 
