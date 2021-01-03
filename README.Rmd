@@ -63,10 +63,13 @@ ggplot(data.frame(x = rnorm(1e4), y = rnorm(1e4)), aes(x = x, y = y)) +
 ```
 
 ```{r}
-pal=nic_palette("colleasa",2)
-ggplot(data.frame(x = rnorm(1e4), y = rnorm(1e4)), aes(x = x, y = y)) +
-  geom_hex() +
-  coord_fixed() +
-  scale_fill_gradientn(colours = pal) + ggtitle("colleasa")
+pal <- nic_palette("colleasb",2)
+penguins2 <- penguins %>% drop_na()
+ggplot(data = penguins2, 
+       aes(y = flipper_length_mm,
+           x = sex,
+           fill=sex)) +
+  geom_boxplot() +
+  scale_fill_manual(values = pal) + ggtitle("colleasa")
   
 ```
