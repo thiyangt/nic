@@ -4,7 +4,6 @@
 # nic
 
 <!-- badges: start -->
-
 <!-- badges: end -->
 
 ## Nature Inspired Colour Palette.
@@ -28,12 +27,12 @@ library(nic)
 ## basic example code
 library(palmerpenguins)
 library(tidyverse)
-#> ── Attaching packages ────────────────────
-#> ✓ ggplot2 3.3.2     ✓ purrr   0.3.4
-#> ✓ tibble  3.0.3     ✓ dplyr   1.0.2
-#> ✓ tidyr   1.1.2     ✓ stringr 1.4.0
-#> ✓ readr   1.3.1     ✓ forcats 0.5.0
-#> ── Conflicts ──── tidyverse_conflicts() ──
+#> ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──
+#> ✓ ggplot2 3.3.5     ✓ purrr   0.3.4
+#> ✓ tibble  3.1.2     ✓ dplyr   1.0.7
+#> ✓ tidyr   1.1.3     ✓ stringr 1.4.0
+#> ✓ readr   1.4.0     ✓ forcats 0.5.1
+#> ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
 #> x dplyr::filter() masks stats::filter()
 #> x dplyr::lag()    masks stats::lag()
 ggplot(data = penguins, 
@@ -76,3 +75,19 @@ ggplot(data = penguins2,
 ```
 
 <img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
+
+<img src="data-raw/thiruni.png" width="100%" />
+
+``` r
+pal <- nic_palette("thiruni", 5)
+library(ggplot2)
+data(diamonds)
+ggplot(data = diamonds, 
+       aes(y = carat,
+           x= cut,
+           fill=cut)) +
+  geom_boxplot() +
+  scale_fill_manual(values = pal) + ggtitle("Thinuri")
+```
+
+<img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />

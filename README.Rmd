@@ -73,3 +73,21 @@ ggplot(data = penguins2,
   scale_fill_manual(values = pal) + ggtitle("colleasa")
   
 ```
+
+
+<img src="data-raw/thiruni.png" width="100%" />
+
+```{r}
+pal <- nic_palette("thiruni", 5)
+library(ggplot2)
+data(diamonds)
+ggplot(data = diamonds, 
+       aes(y = carat,
+           x= cut,
+           fill=cut)) +
+  geom_boxplot() +
+  scale_fill_manual(values = pal) + ggtitle("Thinuri")
+  
+```
+
+
