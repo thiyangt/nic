@@ -9,7 +9,8 @@
 nic_palettes <- list(
   applecroton = rbind(c('#00441b', '#FFFF00'),c(1, 2)),
   colleasa = rbind(c('#78c679', '#67001f'),c(1, 2)),
-  colleasb = rbind(c('#238b45', '#67001f', '#e7298a'),c(1, 2, 3))
+  colleasb = rbind(c('#238b45', '#67001f', '#e7298a'),c(1, 2, 3)),
+  wishbone = rbind(c('#2d004b', '#8073ac', '#fff200'), c(1, 2, 3))
 
 )
 

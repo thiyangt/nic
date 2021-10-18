@@ -79,3 +79,14 @@ ggplot(data = penguins2,
 ```
 
 <img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
+
+![](https://github.com/thiyangt/nic/blob/main/data-raw/wishbone.jpg)
+
+``` r
+library(purrr)
+pal <- nic_palette("wishbone",3)
+penguins %>% ggplot(aes(x=species, fill=island)) + geom_bar() +
+  scale_fill_manual(values = pal) + ggtitle("wishbone")
+```
+
+<img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />

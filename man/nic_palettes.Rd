@@ -5,7 +5,7 @@
 \alias{nic_palettes}
 \title{Nature Inspired Colour Palatte Package}
 \format{
-An object of class \code{list} of length 3.
+An object of class \code{list} of length 4.
 }
 \usage{
 nic_palettes
