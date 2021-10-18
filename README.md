@@ -22,8 +22,6 @@ library(nic)
 
 This is a basic example which shows you how to solve a common problem:
 
-<img src="data-raw/colleasb.jpg" width="100%" />
-
 ``` r
 library(nic)
 ## basic example code
@@ -65,8 +63,6 @@ ggplot(data.frame(x = rnorm(1e4), y = rnorm(1e4)), aes(x = x, y = y)) +
 
 <img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
 
-<img src="data-raw/colleasa.jpg" width="100%" />
-
 ``` r
 pal <- nic_palette("colleasa",2)
 penguins2 <- penguins %>% drop_na()
@@ -79,5 +75,3 @@ ggplot(data = penguins2,
 ```
 
 <img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
-
-![](https://github.com/thiyangt/nic/blob/main/data-raw/wishbone.jpg)

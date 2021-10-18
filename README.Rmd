@@ -33,7 +33,7 @@ library(nic)
 
 This is a basic example which shows you how to solve a common problem:
 
-![]()
+
 
 ```{r}
 library(nic)
@@ -63,8 +63,6 @@ ggplot(data.frame(x = rnorm(1e4), y = rnorm(1e4)), aes(x = x, y = y)) +
   scale_fill_gradientn(colours = pal) + ggtitle("colleasb")
   
 ```
-
-![]()
 
 ```{r}
 pal <- nic_palette("colleasa",2)
