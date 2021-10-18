@@ -33,6 +33,8 @@ library(nic)
 
 This is a basic example which shows you how to solve a common problem:
 
+<img src="data-raw/colleasb.jpg" width="100%" />
+
 ```{r}
 library(nic)
 ## basic example code
@@ -62,8 +64,10 @@ ggplot(data.frame(x = rnorm(1e4), y = rnorm(1e4)), aes(x = x, y = y)) +
   
 ```
 
+<img src="data-raw/colleasa.jpg" width="100%" />
+
 ```{r}
-pal <- nic_palette("colleasb",2)
+pal <- nic_palette("colleasa",2)
 penguins2 <- penguins %>% drop_na()
 ggplot(data = penguins2, 
        aes(y = flipper_length_mm,
@@ -75,19 +79,5 @@ ggplot(data = penguins2,
 ```
 
 
-<img src="data-raw/thiruni.png" width="100%" />
 
-```{r}
-pal <- nic_palette("thiruni", 5)
-library(ggplot2)
-data(diamonds)
-ggplot(data = diamonds, 
-       aes(y = carat,
-           x= cut,
-           fill=cut)) +
-  geom_boxplot() +
-  scale_fill_manual(values = pal) + ggtitle("Thinuri")
-  
-```
-
-
+![](https://github.com/thiyangt/nic/blob/main/data-raw/wishbone.jpg)

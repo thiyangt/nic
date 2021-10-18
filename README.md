@@ -22,6 +22,8 @@ library(nic)
 
 This is a basic example which shows you how to solve a common problem:
 
+<img src="data-raw/colleasb.jpg" width="100%" />
+
 ``` r
 library(nic)
 ## basic example code
@@ -29,8 +31,8 @@ library(palmerpenguins)
 library(tidyverse)
 #> ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──
 #> ✓ ggplot2 3.3.5     ✓ purrr   0.3.4
-#> ✓ tibble  3.1.2     ✓ dplyr   1.0.7
-#> ✓ tidyr   1.1.3     ✓ stringr 1.4.0
+#> ✓ tibble  3.1.5     ✓ dplyr   1.0.7
+#> ✓ tidyr   1.1.4     ✓ stringr 1.4.0
 #> ✓ readr   1.4.0     ✓ forcats 0.5.1
 #> ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
 #> x dplyr::filter() masks stats::filter()
@@ -63,8 +65,10 @@ ggplot(data.frame(x = rnorm(1e4), y = rnorm(1e4)), aes(x = x, y = y)) +
 
 <img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
 
+<img src="data-raw/colleasa.jpg" width="100%" />
+
 ``` r
-pal <- nic_palette("colleasb",2)
+pal <- nic_palette("colleasa",2)
 penguins2 <- penguins %>% drop_na()
 ggplot(data = penguins2, 
        aes(y = flipper_length_mm,
@@ -76,18 +80,4 @@ ggplot(data = penguins2,
 
 <img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
 
-<img src="data-raw/thiruni.png" width="100%" />
-
-``` r
-pal <- nic_palette("thiruni", 5)
-library(ggplot2)
-data(diamonds)
-ggplot(data = diamonds, 
-       aes(y = carat,
-           x= cut,
-           fill=cut)) +
-  geom_boxplot() +
-  scale_fill_manual(values = pal) + ggtitle("Thinuri")
-```
-
-<img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
+![](https://github.com/thiyangt/nic/blob/main/data-raw/wishbone.jpg)
