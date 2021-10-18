@@ -9,8 +9,8 @@
 nic_palettes <- list(
   applecroton = rbind(c('#00441b', '#FFFF00'),c(1, 2)),
   colleasa = rbind(c('#78c679', '#67001f'),c(1, 2)),
-  colleasb = rbind(c('#238b45', '#67001f', '#e7298a'),c(1, 2, 3)),
-  thiruni = rbind(c("#9D9F16", "#C4C573", "#EBEBD0", "#EED1E6", "#CD77B5", "#AD1D85"), 1:6)
+  colleasb = rbind(c('#238b45', '#67001f', '#e7298a'),c(1, 2, 3))
+
 )
 
 
