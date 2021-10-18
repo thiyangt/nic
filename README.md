@@ -22,6 +22,8 @@ library(nic)
 
 This is a basic example which shows you how to solve a common problem:
 
+![](https://github.com/thiyangt/nic/blob/main/data-raw/colleas1b.JPG)
+
 ``` r
 library(nic)
 ## basic example code
@@ -62,6 +64,8 @@ ggplot(data.frame(x = rnorm(1e4), y = rnorm(1e4)), aes(x = x, y = y)) +
 ```
 
 <img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
+
+![](https://github.com/thiyangt/nic/blob/main/data-raw/colleas1a.jpg)
 
 ``` r
 pal <- nic_palette("colleasa",2)
