@@ -87,3 +87,67 @@ penguins %>% ggplot(aes(x=species, fill=island)) + geom_bar() +
   scale_fill_manual(values = pal) + ggtitle("wishbone")
 
 ```
+
+```{r}
+library(patchwork)
+library(here)
+orchid_image <- ggplot() + annotation_custom(grid::rasterGrob(
+  magick::image_read(here("data-raw","orchid.jpeg")),
+  width=unit(1,"npc"),
+  height=unit(1,"npc")),
+  -Inf, Inf, -Inf, Inf)
+
+orchid_pal = nic_palette("orchid_12",12)
+ixora_pal = nic_palette("ixora_12",12)
+
+ixora_image <- ggplot() + annotation_custom(grid::rasterGrob(
+  magick::image_read(here("data-raw","ixora.jpeg")),
+  width=unit(1,"npc"),
+  height=unit(1,"npc")),
+  -Inf, Inf, -Inf, Inf)
+
+orchid_plot <- ggplot(data.frame(x = rnorm(1e4), y = rnorm(1e4)), aes(x = x, y = y)) +
+  geom_hex() +
+  coord_fixed() +
+  scale_fill_gradientn(colours = orchid_pal) + 
+  ggtitle("Orchid flower") +
+  theme_minimal()+
+  theme(legend.position = "bottom")
+ixora_plot <- ggplot(data.frame(x = rnorm(1e4), y = rnorm(1e4)), aes(x = x, y = y)) +
+  geom_hex() +
+  coord_fixed() +
+  scale_fill_gradientn(colours = ixora_pal) + 
+  ggtitle("Ixora flower") +
+  theme_minimal()+
+  theme(legend.position = "bottom")
+orchid_image + ixora_image + orchid_plot + ixora_plot
+```
+
+```{r}
+moss_rose_1_image <- ggplot() + annotation_custom(grid::rasterGrob(
+  magick::image_read(here("data-raw","moss_rose_1.jpeg")),
+  width=unit(1,"npc"),
+  height=unit(1,"npc")),
+  -Inf, Inf, -Inf, Inf)
+moss_rose_2_image <- ggplot() + annotation_custom(grid::rasterGrob(
+  magick::image_read(here("data-raw","moss_rose_2.jpeg")),
+  width=unit(1,"npc"),
+  height=unit(1,"npc")),
+  -Inf, Inf, -Inf, Inf)
+moss_rose_3_image <- ggplot() + annotation_custom(grid::rasterGrob(
+  magick::image_read(here("data-raw","moss_rose_3.jpeg")),
+  width=unit(1,"npc"),
+  height=unit(1,"npc")),
+  -Inf, Inf, -Inf, Inf)
+
+mean_vecs <- sample(seq(5))
+sd_vecs <- sample(seq(5))
+
+moss_rose_plot <- ggplot(data.frame(y = c(rnorm(1000,mean=mean_vecs,sd=sd_vecs)),x = sample(LETTERS[1:5],1000,replace=TRUE)),aes(x = x,y = y,fill = x)) + 
+  geom_boxplot() + 
+  theme_minimal() +
+  scale_fill_manual(values = nic_palette("moss_rose")) +
+  theme(legend.position = "none")
+(moss_rose_1_image + moss_rose_2_image + moss_rose_3_image) / moss_rose_plot
+```
+
