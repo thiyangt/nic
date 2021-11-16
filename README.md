@@ -134,7 +134,7 @@ ixora_plot <- ggplot(data.frame(x = rnorm(1e4), y = rnorm(1e4)), aes(x = x, y = 
   ggtitle("Ixora flower") +
   theme_minimal()+
   theme(legend.position = "bottom")
-(orchid_image + ixora_image) / (orchid_plot + ixora_plot)
+orchid_image + ixora_image + orchid_plot + ixora_plot
 ```
 
 <img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
