@@ -7,20 +7,20 @@
 #' Type  \code{names(nic_palettes)} to view the names of colour palattes
 #' @export
 nic_palettes <- list(
-  applecroton = rbind(c('#00441b', '#FFFF00'),c(1, 2)),
-  coleusa = rbind(c('#78c679', '#67001f'),c(1, 2)),
-  coleusb = rbind(c('#238b45', '#67001f', '#e7298a'),c(1, 2, 3)),
-  coleus_density = rbind(c('#ffff99', '#d9ef8b', '#a6d96a', '#66bd63', '#1a9850', '#e7298a', '#980043'),c(1, 2, 3, 4, 5, 6, 7)),
-  wishbone = rbind(c('#2d004b', '#8073ac', '#fff200'), c(1, 2, 3)),
+  applecroton_2 = rbind(c('#00441b', '#FFFF00'),c(1, 2)),
+  coleusa_2 = rbind(c('#78c679', '#67001f'),c(1, 2)),
+  coleusb_3 = rbind(c('#238b45', '#67001f', '#e7298a'),c(1, 2, 3)),
+  coleus_density_7 = rbind(c('#ffff99', '#d9ef8b', '#a6d96a', '#66bd63', '#1a9850', '#e7298a', '#980043'),c(1, 2, 3, 4, 5, 6, 7)),
+  wishbone_3 = rbind(c('#2d004b', '#8073ac', '#fff200'), c(1, 2, 3)),
   buttercup_12 = rbind(c('#e0e9dc', '#cbd7c4', '#b7c5ac', '#a3b396', '#90a181', '#7d906d', '#6c7e5a', '#5b6d49', '#4b5d39', '#3c4c2b', '#2d3c1d', '#202d11'),seq(12)),
   buttercup_8 = rbind(c('#e0e9dc', '#bfccb6', '#a0b093', '#829572', '#677955', '#4d5f3b', '#364525', '#202d11'),seq(8)),
   ixora_12 = rbind(c('#ed8870', '#ed7c64', '#ec7159', '#e9654d', '#e65a42', '#e15036', '#da472f', '#d1402a', '#c83925', '#bf3321', '#b42e1d', '#aa2a19'),seq(12)),
   ixora_8 = rbind(c('#ed8870', '#ec765e', '#e9644c', '#e35339', '#d8452e', '#ca3a26', '#ba311f', '#aa2a19'),seq(8)),
-  moss_rose = rbind(c('#f4a8d0','#ed6027','#d9986a','#cf3659','#e44294'),seq(5)),
+  moss_rose_5 = rbind(c('#f4a8d0','#ed6027','#d9986a','#cf3659','#e44294'),seq(5)),
   orchid_12 = rbind(c('#c295ba', '#ba8cb3', '#b282ac', '#ab79a5', '#a46f9e', '#9d6597', '#975b90', '#91518a', '#8b4880', '#853e77', '#80326e', '#811d68'),seq(12)),
   orchid_8 = rbind(c('#c295ba', '#b686af', '#aa77a4', '#9f6899', '#95588e', '#8c4982', '#833973', '#811d68'),seq(8)),
-  squarestem = rbind(c('#e89f4c', '#d95827', '#abc762', '#748b5c', '#947362'),seq(5)),
-  papaya = rbind(c('#a17f27', '#b18f2e', '#c19f3a', '#cfb04d', '#dbc268', '#e0d591', '#c8c677', '#b3b667', '#a0a65c', '#8d9553', '#7c854d'),seq(11))
+  squarestem_5 = rbind(c('#e89f4c', '#d95827', '#abc762', '#748b5c', '#947362'),seq(5)),
+  papaya_11 = rbind(c('#a17f27', '#b18f2e', '#c19f3a', '#cfb04d', '#dbc268', '#e0d591', '#c8c677', '#b3b667', '#a0a65c', '#8d9553', '#7c854d'),seq(11))
 )
 
 
@@ -42,9 +42,9 @@ nic_palettes <- list(
 #' @return A vector of colors.
 #'
 #' @examples
-#' nic_palette("applecroton",n=100,type="continuous")
-#' nic_palette("colleasa",3)
-#' nic_palette("colleasb",50)
+#' nic_palette("applecroton_2",n=100,type="continuous")
+#' nic_palette("coleusa_2",2)
+#' nic_palette("coleusb_3",50)
 #'
 #' @export
 

@@ -24,8 +24,8 @@ of the region, and checked for color blind safety using \href{https://gka.github
 View photos for each palette \href{https://github.com/thiyangt/nic}{On Github}.
 }
 \examples{
-nic_palette("applecroton",n=100,type="continuous")
-nic_palette("colleasa",3)
-nic_palette("colleasb",50)
+nic_palette("applecroton_2",n=100,type="continuous")
+nic_palette("coleusa_2",2)
+nic_palette("coleusb_3",50)
 
 }
