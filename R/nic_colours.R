@@ -8,8 +8,9 @@
 #' @export
 nic_palettes <- list(
   applecroton = rbind(c('#00441b', '#FFFF00'),c(1, 2)),
-  colleasa = rbind(c('#78c679', '#67001f'),c(1, 2)),
-  colleasb = rbind(c('#238b45', '#67001f', '#e7298a'),c(1, 2, 3)),
+  coleusa = rbind(c('#78c679', '#67001f'),c(1, 2)),
+  coleusb = rbind(c('#238b45', '#67001f', '#e7298a'),c(1, 2, 3)),
+  coleus_density = rbind(c('#ffff99', '#d9ef8b', '#a6d96a', '#66bd63', '#1a9850', '#e7298a', '#980043'),c(1, 2, 3, 4, 5, 6, 7)),
   wishbone = rbind(c('#2d004b', '#8073ac', '#fff200'), c(1, 2, 3)),
   buttercup_12 = rbind(c('#e0e9dc', '#cbd7c4', '#b7c5ac', '#a3b396', '#90a181', '#7d906d', '#6c7e5a', '#5b6d49', '#4b5d39', '#3c4c2b', '#2d3c1d', '#202d11'),seq(12)),
   buttercup_8 = rbind(c('#e0e9dc', '#bfccb6', '#a0b093', '#829572', '#677955', '#4d5f3b', '#364525', '#202d11'),seq(8)),

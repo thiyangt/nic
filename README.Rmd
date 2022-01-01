@@ -27,66 +27,12 @@ You can install the released version of nic from [Github](https://github.com/thi
 ```{r}
 #devtools::install_github("thiyangt/nic")
 library(nic)
+library(tidyverse)
 ```
 
 ## Example
 
 This is a basic example which shows you how to solve a common problem:
-
-![](https://github.com/thiyangt/nic/blob/main/data-raw/colleas1b.JPG)
-
-```{r}
-library(nic)
-## basic example code
-library(palmerpenguins)
-library(tidyverse)
-ggplot(data = penguins, 
-       aes(x = flipper_length_mm,
-           y = body_mass_g)) +
-  geom_point(aes(color = species, 
-                 shape = species),
-             size = 3) +
-  scale_color_manual(values = nic_palette("colleasb",3)) +
-  labs(title = "Penguin size, Palmer Station LTER",
-       subtitle = "Flipper length and body mass for Adelie, Chinstrap and Gentoo Penguins",
-       x = "Flipper length (mm)",
-       y = "Body mass (g)",
-       color = "Penguin species",
-       shape = "Penguin species") 
-```
-
-```{r}
-pal=nic_palette("colleasb",3)
-ggplot(data.frame(x = rnorm(1e4), y = rnorm(1e4)), aes(x = x, y = y)) +
-  geom_hex() +
-  coord_fixed() +
-  scale_fill_gradientn(colours = pal) + ggtitle("colleasb")
-  
-```
-
-![](https://github.com/thiyangt/nic/blob/main/data-raw/colleas1a.jpg)
-
-```{r}
-pal <- nic_palette("colleasa",2)
-penguins2 <- penguins %>% drop_na()
-ggplot(data = penguins2, 
-       aes(y = flipper_length_mm,
-           x = sex,
-           fill=sex)) +
-  geom_boxplot() +
-  scale_fill_manual(values = pal) + ggtitle("colleasa")
-  
-```
-
-![](https://github.com/thiyangt/nic/blob/main/data-raw/wishbone.jpg)
-
-```{r}
-library(purrr)
-pal <- nic_palette("wishbone",3)
-penguins %>% ggplot(aes(x=species, fill=island)) + geom_bar() +
-  scale_fill_manual(values = pal) + ggtitle("wishbone")
-
-```
 
 ```{r}
 library(patchwork)
@@ -149,5 +95,37 @@ moss_rose_plot <- ggplot(data.frame(y = c(rnorm(1000,mean=mean_vecs,sd=sd_vecs))
   scale_fill_manual(values = nic_palette("moss_rose")) +
   theme(legend.position = "none")
 (moss_rose_1_image + moss_rose_2_image + moss_rose_3_image) / moss_rose_plot
+```
+
+
+```{r}
+library(palmerpenguins)
+coleus_density_img <- ggplot() + annotation_custom(grid::rasterGrob(
+  magick::image_read(here("data-raw","coleus_density.PNG")),
+  width=unit(1,"npc"),
+  height=unit(2,"npc")),
+  -Inf, Inf, -Inf, Inf)
+
+coleus_density = nic_palette("coleus_density",6)
+coleus_density_plot <- ggplot(data.frame(x = rnorm(1e4), y = rnorm(1e4)), aes(x = x, y = y)) + geom_hex() +
+  coord_fixed() +
+  scale_fill_gradientn(colours = coleus_density) + ggtitle("coleus_density")
+
+coleus1a <- ggplot() + annotation_custom(grid::rasterGrob(
+  magick::image_read(here("data-raw","coleus1a.jpg")),
+  width=unit(1,"npc"),
+  height=unit(2,"npc")),
+  -Inf, Inf, -Inf, Inf)
+
+pal <- nic_palette("coleusa",2)
+penguins2 <- penguins %>% drop_na()
+penguinplot <- ggplot(data = penguins2, 
+       aes(y = flipper_length_mm,
+           x = sex,
+           fill=sex)) +
+  geom_boxplot() +
+  scale_fill_manual(values = pal) + ggtitle("colleasa")
+
+(coleus_density_img + coleus_density_plot + coleus1a + penguinplot)
 ```
 

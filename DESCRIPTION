@@ -1,15 +1,16 @@
 Package: nic
 Title: Nature Inspired Colour Palatte
-Version: 0.0.0.9000
-Authors@R: 
+Version: 0.0.1
+Authors@R: c(
     person(given = "Thiyanga S.",
            family = "Talagala",
            role = c("aut", "cre"),
            email = "ttalaga@gmail.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+           comment = c(ORCID = "YOUR-ORCID-ID")),
+           person("Janith C.", "Wanniarachchi", role = c("aut")))
 Description: Color Palettes based on Nature Inspired Colours.
 License: CC0
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2
