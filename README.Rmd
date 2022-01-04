@@ -2,7 +2,7 @@
 output: github_document
 ---
 
-# seer <img src="hex/hexsticker.png" align="right" height="200"/>
+# nic <img src="hex/hexsticker.png" align="right" height="200"/>
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
@@ -15,7 +15,6 @@ knitr::opts_chunk$set(
 )
 ```
 
-# nic
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -26,7 +25,7 @@ knitr::opts_chunk$set(
 
 You can install the released version of nic from [Github](https://github.com/thiyangt/nic) with:
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 #devtools::install_github("thiyangt/nic")
 library(nic)
 library(tidyverse)
@@ -129,6 +128,27 @@ penguinplot <- ggplot(data = penguins2,
   scale_fill_manual(values = pal) + ggtitle("colleasa_2")
 
 (coleus_density_img + coleus_density_plot + coleus1a + penguinplot)
+```
+
+```{r, fig.width=12}
+#devtools::install_github("edwinth/paletti")
+library(paletti)
+statesMap = map_data("state")
+statesMap$num = rnorm(nrow(statesMap))
+
+kandyan <- knitr::include_graphics(here("data-raw","kandyan_dancer.png"))
+kandyan <- ggplot() + annotation_custom(grid::rasterGrob(
+  magick::image_read(here("data-raw","kandyan_dancer.png")),
+  width=unit(1,"npc"),
+  height=unit(1,"npc")),
+  -Inf, Inf, -Inf, Inf)
+
+pal_kandyan <- nic_palette("kandyan_dancer_6",6)
+scale_fill_my_palette <- get_pal(pal_kandyan) %>%
+  get_scale_fill()
+g2 <- ggplot(statesMap, aes(x = long, y = lat, group = group, fill = num)) + 
+geom_polygon(color = "black") + scale_fill_my_palette(discrete = FALSE)
+(kandyan + g2)
 ```
 
 ## Other colour pallets

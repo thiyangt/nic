@@ -6,8 +6,9 @@ Authors@R: c(
            family = "Talagala",
            role = c("aut", "cre"),
            email = "ttalaga@gmail.com",
-           comment = c(ORCID = "YOUR-ORCID-ID")),
-           person("Janith C.", "Wanniarachchi", role = c("aut")))
+           comment = c(ORCID = "0000-0002-5058-7503")),
+           person("Janith C.", "Wanniarachchi", role = c("aut")),
+           person("Udeshi", "Salgado", role=c("ctb")))
 Description: Color Palettes based on Nature Inspired Colours.
 License: CC0
 Encoding: UTF-8

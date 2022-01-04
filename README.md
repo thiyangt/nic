@@ -1,10 +1,7 @@
 
-# seer <img src="hex/hexsticker.png" align="right" height="200"/>
+# nic <img src="hex/hexsticker.png" align="right" height="200"/>
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-
-# nic
-
 <!-- badges: start -->
 <!-- badges: end -->
 
@@ -19,14 +16,6 @@ You can install the released version of nic from
 #devtools::install_github("thiyangt/nic")
 library(nic)
 library(tidyverse)
-#> ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──
-#> ✓ ggplot2 3.3.5     ✓ purrr   0.3.4
-#> ✓ tibble  3.1.5     ✓ dplyr   1.0.7
-#> ✓ tidyr   1.1.4     ✓ stringr 1.4.0
-#> ✓ readr   2.0.2     ✓ forcats 0.5.1
-#> ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-#> x dplyr::filter() masks stats::filter()
-#> x dplyr::lag()    masks stats::lag()
 ```
 
 ## Example
@@ -134,76 +123,99 @@ penguinplot <- ggplot(data = penguins2,
 
 <img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
 
+``` r
+#devtools::install_github("edwinth/paletti")
+library(paletti)
+statesMap = map_data("state")
+statesMap$num = rnorm(nrow(statesMap))
+
+kandyan <- knitr::include_graphics(here("data-raw","kandyan_dancer.png"))
+kandyan <- ggplot() + annotation_custom(grid::rasterGrob(
+  magick::image_read(here("data-raw","kandyan_dancer.png")),
+  width=unit(1,"npc"),
+  height=unit(1,"npc")),
+  -Inf, Inf, -Inf, Inf)
+
+pal_kandyan <- nic_palette("kandyan_dancer_6",6)
+scale_fill_my_palette <- get_pal(pal_kandyan) %>%
+  get_scale_fill()
+g2 <- ggplot(statesMap, aes(x = long, y = lat, group = group, fill = num)) + 
+geom_polygon(color = "black") + scale_fill_my_palette(discrete = FALSE)
+(kandyan + g2)
+```
+
+<img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
+
 ## Other colour pallets
 
 ``` r
 nic_palette("applecroton_2", 2)
 ```
 
-<img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
 
 ``` r
 nic_palette("coleusb_3", 3)
 ```
 
-<img src="man/figures/README-unnamed-chunk-6-2.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-7-2.png" width="100%" />
 
 ``` r
 nic_palette("wishbone_3", 3)
 ```
 
-<img src="man/figures/README-unnamed-chunk-6-3.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-7-3.png" width="100%" />
 
 ``` r
 nic_palette("buttercup_12", 12)
 ```
 
-<img src="man/figures/README-unnamed-chunk-6-4.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-7-4.png" width="100%" />
 
 ``` r
 nic_palette("buttercup_8", 8)
 ```
 
-<img src="man/figures/README-unnamed-chunk-6-5.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-7-5.png" width="100%" />
 
 ``` r
 nic_palette("ixora_12", 12)
 ```
 
-<img src="man/figures/README-unnamed-chunk-6-6.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-7-6.png" width="100%" />
 
 ``` r
 nic_palette("ixora_8", 8)
 ```
 
-<img src="man/figures/README-unnamed-chunk-6-7.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-7-7.png" width="100%" />
 
 ``` r
 nic_palette("moss_rose_5", 5)
 ```
 
-<img src="man/figures/README-unnamed-chunk-6-8.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-7-8.png" width="100%" />
 
 ``` r
 nic_palette("orchid_12", 12)
 ```
 
-<img src="man/figures/README-unnamed-chunk-6-9.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-7-9.png" width="100%" />
 
 ``` r
 nic_palette("orchid_8", 8)
 ```
 
-<img src="man/figures/README-unnamed-chunk-6-10.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-7-10.png" width="100%" />
 
 ``` r
 nic_palette("squarestem_5", 5)
 ```
 
-<img src="man/figures/README-unnamed-chunk-6-11.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-7-11.png" width="100%" />
 
 ``` r
 nic_palette("papaya_11", 11)
 ```
 
-<img src="man/figures/README-unnamed-chunk-6-12.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-7-12.png" width="100%" />
