@@ -5,6 +5,7 @@
 ^\.travis\.yml$
 ^revdep$
 ^README\.Rmd$
+^README\.md$
 ^README-.*\.png$
 .Rproj.user
 .Rhistory
