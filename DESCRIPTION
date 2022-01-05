@@ -1,17 +1,24 @@
 Package: nic
-Title: Nature Inspired Colour Palatte
+Title: Nature Inspired Colour Palattes
 Version: 0.0.1
 Authors@R: c(
     person(given = "Thiyanga S.",
            family = "Talagala",
            role = c("aut", "cre"),
-           email = "ttalaga@gmail.com",
+           email = "ttalagala@sjp.ac.lk",
            comment = c(ORCID = "0000-0002-5058-7503")),
            person("Janith C.", "Wanniarachchi", role = c("aut")),
            person("Udeshi", "Salgado", role=c("ctb")))
-Description: Color Palettes based on Nature Inspired Colours.
+Description: Color palettes based on Sri Lanka nature inspired colours.
+URL: https://thiyangt.github.io/nic/
+BugReports: https://github.com/thiyangt/nic/issues
 License: CC0
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
+Suggests: 
+    knitr,
+    rmarkdown,
+    tidyverse
+VignetteBuilder: knitr

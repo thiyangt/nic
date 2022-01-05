@@ -5,7 +5,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-## Nature Inspired Colour Palette.
+## Sri Lanka Nature Inspired Colour Palettes
 
 ## Installation
 
@@ -155,67 +155,115 @@ nic_palette("applecroton_2", 2)
 <img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
 
 ``` r
-nic_palette("coleusb_3", 3)
+knitr::include_graphics(here("data-raw","coleus1b.JPG"))
 ```
 
-<img src="man/figures/README-unnamed-chunk-7-2.png" width="100%" />
+<img src="/Users/thiyangashaminitalagala/packages/nic/data-raw/coleus1b.JPG" width="100%" />
 
 ``` r
-nic_palette("wishbone_3", 3)
+nic_palette("coleusb_3", 3)
 ```
 
 <img src="man/figures/README-unnamed-chunk-7-3.png" width="100%" />
 
 ``` r
-nic_palette("buttercup_12", 12)
+knitr::include_graphics(here("data-raw","wishbone.jpg"))
 ```
 
-<img src="man/figures/README-unnamed-chunk-7-4.png" width="100%" />
+<img src="/Users/thiyangashaminitalagala/packages/nic/data-raw/wishbone.jpg" width="100%" />
 
 ``` r
-nic_palette("buttercup_8", 8)
+nic_palette("wishbone_3", 3)
 ```
 
 <img src="man/figures/README-unnamed-chunk-7-5.png" width="100%" />
 
 ``` r
-nic_palette("ixora_12", 12)
+knitr::include_graphics(here("data-raw","buttercup.jpeg"))
 ```
 
-<img src="man/figures/README-unnamed-chunk-7-6.png" width="100%" />
+<img src="/Users/thiyangashaminitalagala/packages/nic/data-raw/buttercup.jpeg" width="100%" />
 
 ``` r
-nic_palette("ixora_8", 8)
+nic_palette("buttercup_12", 12)
 ```
 
 <img src="man/figures/README-unnamed-chunk-7-7.png" width="100%" />
 
 ``` r
-nic_palette("moss_rose_5", 5)
+nic_palette("buttercup_8", 8)
 ```
 
 <img src="man/figures/README-unnamed-chunk-7-8.png" width="100%" />
 
 ``` r
-nic_palette("orchid_12", 12)
+knitr::include_graphics(here("data-raw","ixora.jpeg"))
 ```
 
-<img src="man/figures/README-unnamed-chunk-7-9.png" width="100%" />
+<img src="/Users/thiyangashaminitalagala/packages/nic/data-raw/ixora.jpeg" width="100%" />
 
 ``` r
-nic_palette("orchid_8", 8)
+nic_palette("ixora_12", 12)
 ```
 
 <img src="man/figures/README-unnamed-chunk-7-10.png" width="100%" />
 
 ``` r
-nic_palette("squarestem_5", 5)
+nic_palette("ixora_8", 8)
 ```
 
 <img src="man/figures/README-unnamed-chunk-7-11.png" width="100%" />
 
 ``` r
+knitr::include_graphics(here("data-raw","moss_rose_4.jpeg"))
+```
+
+<img src="/Users/thiyangashaminitalagala/packages/nic/data-raw/moss_rose_4.jpeg" width="100%" />
+
+``` r
+nic_palette("moss_rose_5", 5)
+```
+
+<img src="man/figures/README-unnamed-chunk-7-13.png" width="100%" />
+
+``` r
+knitr::include_graphics(here("data-raw","orchid.jpeg"))
+```
+
+<img src="/Users/thiyangashaminitalagala/packages/nic/data-raw/orchid.jpeg" width="100%" />
+
+``` r
+nic_palette("orchid_12", 12)
+```
+
+<img src="man/figures/README-unnamed-chunk-7-15.png" width="100%" />
+
+``` r
+nic_palette("orchid_8", 8)
+```
+
+<img src="man/figures/README-unnamed-chunk-7-16.png" width="100%" />
+
+``` r
+knitr::include_graphics(here("data-raw","squarestem.jpeg"))
+```
+
+<img src="/Users/thiyangashaminitalagala/packages/nic/data-raw/squarestem.jpeg" width="100%" />
+
+``` r
+nic_palette("squarestem_5", 5)
+```
+
+<img src="man/figures/README-unnamed-chunk-7-18.png" width="100%" />
+
+``` r
+knitr::include_graphics(here("data-raw","papaya.jpeg"))
+```
+
+<img src="/Users/thiyangashaminitalagala/packages/nic/data-raw/papaya.jpeg" width="100%" />
+
+``` r
 nic_palette("papaya_11", 11)
 ```
 
-<img src="man/figures/README-unnamed-chunk-7-12.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-7-20.png" width="100%" />

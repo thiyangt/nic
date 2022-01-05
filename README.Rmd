@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-## Nature Inspired Colour Palette.
+## Sri Lanka Nature Inspired Colour Palettes
 
 ## Installation
 
@@ -154,17 +154,26 @@ geom_polygon(color = "black") + scale_fill_my_palette(discrete = FALSE)
 ## Other colour pallets
 
 ```{r}
+
 nic_palette("applecroton_2", 2)
+knitr::include_graphics(here("data-raw","coleus1b.JPG"))
 nic_palette("coleusb_3", 3)
+knitr::include_graphics(here("data-raw","wishbone.jpg"))
 nic_palette("wishbone_3", 3)
+knitr::include_graphics(here("data-raw","buttercup.jpeg"))
 nic_palette("buttercup_12", 12)
 nic_palette("buttercup_8", 8)
+knitr::include_graphics(here("data-raw","ixora.jpeg"))
 nic_palette("ixora_12", 12)
 nic_palette("ixora_8", 8)
+knitr::include_graphics(here("data-raw","moss_rose_4.jpeg"))
 nic_palette("moss_rose_5", 5)
+knitr::include_graphics(here("data-raw","orchid.jpeg"))
 nic_palette("orchid_12", 12)
 nic_palette("orchid_8", 8)
+knitr::include_graphics(here("data-raw","squarestem.jpeg"))
 nic_palette("squarestem_5", 5)
+knitr::include_graphics(here("data-raw","papaya.jpeg"))
 nic_palette("papaya_11", 11)
 
 
