@@ -153,27 +153,58 @@ geom_polygon(color = "black") + scale_fill_my_palette(discrete = FALSE)
 
 ## Other colour pallets
 
-```{r}
-
+```{r, echo=FALSE}
 nic_palette("applecroton_2", 2)
-knitr::include_graphics(here("data-raw","coleus1b.JPG"))
+ggplot() + annotation_custom(grid::rasterGrob(
+  magick::image_read(here("data-raw","coleus1b.JPG")),
+  width=unit(1,"npc"),
+  height=unit(1,"npc")),
+  -Inf, Inf, -Inf, Inf)
 nic_palette("coleusb_3", 3)
-knitr::include_graphics(here("data-raw","wishbone.jpg"))
+ggplot() + annotation_custom(grid::rasterGrob(
+  magick::image_read(here("data-raw","wishbone.jpg")),
+  width=unit(1,"npc"),
+  height=unit(1,"npc")),
+  -Inf, Inf, -Inf, Inf)
 nic_palette("wishbone_3", 3)
-knitr::include_graphics(here("data-raw","buttercup.jpeg"))
+ggplot() + annotation_custom(grid::rasterGrob(
+  magick::image_read(here("data-raw","buttercup.jpeg")),
+  width=unit(1,"npc"),
+  height=unit(1,"npc")),
+  -Inf, Inf, -Inf, Inf)
 nic_palette("buttercup_12", 12)
 nic_palette("buttercup_8", 8)
-knitr::include_graphics(here("data-raw","ixora.jpeg"))
+ggplot() + annotation_custom(grid::rasterGrob(
+  magick::image_read(here("data-raw","ixora.jpeg")),
+  width=unit(1,"npc"),
+  height=unit(1,"npc")),
+  -Inf, Inf, -Inf, Inf)
 nic_palette("ixora_12", 12)
 nic_palette("ixora_8", 8)
-knitr::include_graphics(here("data-raw","moss_rose_4.jpeg"))
+ggplot() + annotation_custom(grid::rasterGrob(
+  magick::image_read(here("data-raw","moss_rose_4.jpeg")),
+  width=unit(1,"npc"),
+  height=unit(1,"npc")),
+  -Inf, Inf, -Inf, Inf)
 nic_palette("moss_rose_5", 5)
-knitr::include_graphics(here("data-raw","orchid.jpeg"))
+ggplot() + annotation_custom(grid::rasterGrob(
+  magick::image_read(here("data-raw","orchid.jpeg")),
+  width=unit(1,"npc"),
+  height=unit(1,"npc")),
+  -Inf, Inf, -Inf, Inf)
 nic_palette("orchid_12", 12)
 nic_palette("orchid_8", 8)
-knitr::include_graphics(here("data-raw","squarestem.jpeg"))
+ggplot() + annotation_custom(grid::rasterGrob(
+  magick::image_read(here("data-raw","squarestem.jpeg")),
+  width=unit(1,"npc"),
+  height=unit(1,"npc")),
+  -Inf, Inf, -Inf, Inf)
 nic_palette("squarestem_5", 5)
-knitr::include_graphics(here("data-raw","papaya.jpeg"))
+ggplot() + annotation_custom(grid::rasterGrob(
+  magick::image_read(here("data-raw","papaya.jpeg")),
+  width=unit(1,"npc"),
+  height=unit(1,"npc")),
+  -Inf, Inf, -Inf, Inf)
 nic_palette("papaya_11", 11)
 
 
