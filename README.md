@@ -145,7 +145,3 @@ geom_polygon(color = "black") + scale_fill_my_palette(discrete = FALSE)
 ```
 
 <img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
-
-## Other colour pallets
-
-<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" /><img src="man/figures/README-unnamed-chunk-7-2.png" width="100%" /><img src="man/figures/README-unnamed-chunk-7-3.png" width="100%" /><img src="man/figures/README-unnamed-chunk-7-4.png" width="100%" /><img src="man/figures/README-unnamed-chunk-7-5.png" width="100%" /><img src="man/figures/README-unnamed-chunk-7-6.png" width="100%" /><img src="man/figures/README-unnamed-chunk-7-7.png" width="100%" /><img src="man/figures/README-unnamed-chunk-7-8.png" width="100%" /><img src="man/figures/README-unnamed-chunk-7-9.png" width="100%" /><img src="man/figures/README-unnamed-chunk-7-10.png" width="100%" /><img src="man/figures/README-unnamed-chunk-7-11.png" width="100%" /><img src="man/figures/README-unnamed-chunk-7-12.png" width="100%" /><img src="man/figures/README-unnamed-chunk-7-13.png" width="100%" /><img src="man/figures/README-unnamed-chunk-7-14.png" width="100%" /><img src="man/figures/README-unnamed-chunk-7-15.png" width="100%" /><img src="man/figures/README-unnamed-chunk-7-16.png" width="100%" /><img src="man/figures/README-unnamed-chunk-7-17.png" width="100%" /><img src="man/figures/README-unnamed-chunk-7-18.png" width="100%" /><img src="man/figures/README-unnamed-chunk-7-19.png" width="100%" /><img src="man/figures/README-unnamed-chunk-7-20.png" width="100%" />
