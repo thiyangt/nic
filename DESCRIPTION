@@ -9,7 +9,7 @@ Authors@R: c(
            comment = c(ORCID = "0000-0002-5058-7503")),
            person("Janith C.", "Wanniarachchi", role = c("aut")),
            person("Udeshi", "Salgado", role=c("ctb")))
-Description: Color palettes based on Sri Lanka nature inspired colours.
+Description: Color palettes based on nature inspired colours in Sri Lanka.
 URL: https://github.com/thiyangt/nic
 BugReports: https://github.com/thiyangt/nic/issues
 License: CC0
