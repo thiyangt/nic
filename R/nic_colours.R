@@ -21,7 +21,7 @@ nic_palettes <- list(
   orchid_8 = rbind(c('#c295ba', '#b686af', '#aa77a4', '#9f6899', '#95588e', '#8c4982', '#833973', '#811d68'),seq(8)),
   squarestem_5 = rbind(c('#e89f4c', '#d95827', '#abc762', '#748b5c', '#947362'),seq(5)),
   papaya_11 = rbind(c('#a17f27', '#b18f2e', '#c19f3a', '#cfb04d', '#dbc268', '#e0d591', '#c8c677', '#b3b667', '#a0a65c', '#8d9553', '#7c854d'),seq(11)),
-  kandyan_dancer_6 = rbind(c("#780e02", "#c94406","#c04e0f","#f3f30c", "#8fc912", "#3a9c02" ,"#034704"), seq(6))
+  kandyan_dancer_6 = rbind(c("#780e02", "#c94406","#c04e0f","#f3f30c", "#8fc912", "#3a9c02" ,"#034704"), seq(7))
 )
 
 
