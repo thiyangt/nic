@@ -1,0 +1,83 @@
+---
+title: "Getting started on the Sri Lanka Nature Inspired Color (nic) Package"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{color-palette-demo}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.height = 4,
+  fig.width = 6
+)
+```
+
+```{r setup}
+library(nic)
+library(tidyverse)
+library(palmerpenguins)
+theme_set(theme_minimal())
+```
+
+The Sri Lanka Nature Inspired Color Palettes (nic) package contains a wide range of color palettes that you can use for your visualizations. All the color palettes are inspired by the natural color palettes in Sri Lanka. Color palettes are mainly divided to three categories based on their capability to show case colors. 
+
+1. Sequential color palettes
+2. Diverging color palettes
+3. Qualitative color palettes
+
+In this tutorial we will be exploring all of the color palettes available within the ```nic``` package. The names of the color palettes available within the ```nic``` package are as follows.
+
+```{r}
+names(nic_palettes)
+```
+
+
+## Sequential color palettes
+
+```{r}
+penguins %>% 
+  drop_na() %>% 
+  ggplot(aes(x = bill_length_mm,y = bill_depth_mm,color=body_mass_g))+
+  geom_point()+
+  scale_color_gradientn(colors = nic_palette("orchid_12",12))+
+  labs(x = "Length of bill in milimetres",y = "Depth of bill in milimetres",color = "Body mass in grams")+
+  theme(legend.position = "top")
+```
+
+```{r}
+diamonds %>% 
+  ggplot(aes(x = cut,y = price,fill = cut))+
+  geom_violin()+
+  scale_fill_manual(values = nic_palette("ixora_8",5))
+```
+
+
+## Diverging color palettes
+
+```{r}
+set.seed(42)
+tibble(Date = seq.Date(from = as.Date("2021-1-1"),
+                       to = as.Date("2021-12-31"),by = "day"),
+       Returns = as.numeric(arima.sim(n = 365,list(ar = c(0.501))))) %>% 
+  ggplot(aes(x = Date,y = Returns,color = Returns))+
+  geom_line()+
+  scale_color_gradientn(colors = nic_palette("kandyan_dancer_6"))+
+  theme(legend.position = "bottom")
+```
+
+## Qualitiative color palettes
+
+```{r}
+penguins %>% 
+  drop_na() %>% 
+  ggplot(aes(x = bill_length_mm,y = bill_depth_mm,color=species))+
+  geom_point()+
+  scale_color_manual(values = nic_palette("moss_rose_5",4))+
+  labs(x = "Length of bill in milimetres",y = "Depth of bill in milimetres",color = "Species")+
+  theme(legend.position = "top")
+```
+
