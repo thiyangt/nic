@@ -15,3 +15,5 @@
 docs
 inst/doc
 ^hex$
+/doc/
+/Meta/
