@@ -15,7 +15,8 @@ You can install the released version of nic from
 ``` r
 #devtools::install_github("thiyangt/nic")
 library(nic)
-library(tidyverse)
+library(ggplot2)
+library(tidyr)
 ```
 
 ## Example
